@@ -1,3 +1,4 @@
+'use strict';
 const animalCtrl=require('../controllers/animalCtrl');
 module.exports = function(app, opts) {
     return new animalInit(app, opts);

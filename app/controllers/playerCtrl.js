@@ -1,3 +1,4 @@
+'use strict';
 const C = require('../shard/constant');
 const uuid = require('node-uuid');
 const md5 = require('md5');

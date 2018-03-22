@@ -1,15 +1,49 @@
+'use strict';
 const Promise = require('bluebird');
 const playerCtrl = require('./playerCtrl');
+const gamesCtrl = require('./gemesCtrl');
+const EUS = require('../shard/enums');
 let animalPlayersPool = new Map();//游戏玩家信息
+//游戏基础配置
+let animalBaseConfigs = {
+    down_bet_arr: [1, 5, 10, 20, 50, 100],
+    down_bet_limit: {
+        max: 10000,
+        min: 1,
+        vip: 0
+    },
+    rate: 0.05,
+    bankerNumber: 10,
+    upBankerMin: 10000,
+    lottery_manic: {
+        "1": 1,
+        "2": 1,
+        "3": 199,
+        "4": 100,
+        "5": 100,
+        "6": 100,
+        "7": 199,
+        "8": 100,
+        "9": 100,
+        "10": 100
+    }
+};
 var animalCtrl = module.exports;
 //初始化老虎机
 animalCtrl.init = Promise.coroutine(function* (app) {
-    console.warn('animalCtrl init');
+    let animalConfig = yield gamesCtrl.getGamesAsync(EUS.GAME_CODE.ANIMAL);
+    if (!animalConfig) {
+        animalConfig = yield gamesCtrl.setGamesAsync({
+            'gameId': EUS.GAME_CODE.ANIMAL,
+            'configs': JSON.stringify(animalBaseConfigs)
+        });
+    }
+    console.warn(animalConfig.gameId);
 });
 //玩家加入游戏
 animalCtrl.joinGameAsync = Promise.coroutine(function* (playerId) {
     let player = yield playerCtrl.getPlayerByIdAsync(playerId);
-    if (animalPlayersPool.get(playerId) == undefined && !player)
+    if (!animalPlayersPool.get(playerId) && !player)
         animalPlayers.set(player.playerId, player);
     //加入频道
     let servers = this.app.getServersByType('animal');
@@ -19,7 +53,7 @@ animalCtrl.joinGameAsync = Promise.coroutine(function* (playerId) {
 });
 //离开游戏
 animalCtrl.leaveGameAsync = Promise.coroutine(function* (playerId) {
-    if (animalPlayersPool.get(playerId) == undefined)
+    if (!animalPlayersPool.get(playerId))
         animalPlayers.delete(playerId);
     //离开频道
 

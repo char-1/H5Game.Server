@@ -1,3 +1,4 @@
+'use strict';
 const Promise = require('bluebird');
 const animalCtrl = require('../../../controllers/animalCtrl');
 const C = require('../../../shard/constant');

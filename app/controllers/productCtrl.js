@@ -1,3 +1,4 @@
+'use strict';
 const Product = require('../models/product');
 const C = require('../shard/constant');
 const Promise = require("bluebird");

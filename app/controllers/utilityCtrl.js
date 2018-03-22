@@ -1,3 +1,4 @@
+'use strict';
 let utilityCtrl = module.exports;
 utilityCtrl.pushMessage = function (app, user, route, msg) {
     let tmp = [];
