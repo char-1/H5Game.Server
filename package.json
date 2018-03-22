@@ -22,6 +22,14 @@
   },
   "homepage": "https://github.com/char-1/H5Game.Server#readme",
   "dependencies": {
-    "pomelo": "^2.2.5"
+    "async": "^2.6.0",
+    "bluebird": "^3.5.1",
+    "lodash": "^4.17.5",
+    "md5": "^2.2.1",
+    "moment": "^2.21.0",
+    "mysql2": "^1.5.2",
+    "node-uuid": "^1.4.8",
+    "pomelo": "^2.2.5",
+    "sequelize": "^4.36.1"
   }
 }

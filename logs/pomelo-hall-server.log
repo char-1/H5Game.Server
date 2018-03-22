@@ -1,0 +1,5 @@
+[2018-03-14 15:33:06.491] [INFO] pomelo - [32m[E:\NodeJs-Projects\H5Game.Server\node_modules\pomelo\lib\application.js] [39mapplication inited: "hall-server"
+[2018-03-14 15:33:06.816] [INFO] pomelo - [32m[E:\NodeJs-Projects\H5Game.Server\node_modules\pomelo\lib\application.js] [39m"hall-server" enter after start...
+[2018-03-14 15:33:06.817] [INFO] pomelo - [32m[E:\NodeJs-Projects\H5Game.Server\node_modules\pomelo\lib\application.js] [39m"hall-server" finish start
+[2018-03-14 15:33:06.818] [INFO] pomelo - [32m[E:\NodeJs-Projects\H5Game.Server\node_modules\pomelo\lib\application.js] [39m"hall-server" startup in 320 ms
+[2018-03-14 15:33:06.869] [DEBUG] pomelo - [36m[E:\NodeJs-Projects\H5Game.Server\node_modules\pomelo\lib\modules\monitorwatcher.js] [39m[hall-server] receive addServer signal: {"action":"addServer","server":{"main":"E:\\NodeJs-Projects\\H5Game.Server\\app.js","env":"development","id":"connector-server-1","host":"127.0.0.1","port":3150,"clientHost":"127.0.0.1","clientPort":3010,"frontend":"true","args":"--inspect=32312","serverType":"connector","pid":19136}}

@@ -1,10 +1,64 @@
 {
-  "compilerOptions": {
-    "module": "commonjs",
-    "target": "es5",
-    "sourceMap": true
+  "development": {
+    "connector": [
+      {
+        "id": "connector-server-1",
+        "host": "127.0.0.1",
+        "port": 7150,
+        "clientHost": "127.0.0.1",
+        "clientPort": 57105,
+        "frontend": true,
+        "args": ""
+      }
+    ],
+    "http": [
+      {
+        "id": "http-server-1",
+        "host": "127.0.0.1",
+        "port": 4150,
+        "entryJs": "restful.js",
+        "httpPort": 54083,
+        "args": ""
+      }
+    ],
+    "animal": [
+      {
+        "id": "animal-server-1",
+        "host": "127.0.0.1",
+        "port": 57301,
+        "args": ""
+      }
+    ]
   },
-  "exclude": [
-    "node_modules"
-  ]
+  "production": {
+    "connector": [
+      {
+        "id": "connector-server-1",
+        "host": "127.0.0.1",
+        "port": 7150,
+        "clientHost": "127.0.0.1",
+        "clientPort": 57105,
+        "frontend": true,
+        "args": ""
+      }
+    ],
+    "http": [
+      {
+        "id": "http-server-1",
+        "host": "127.0.0.1",
+        "port": 4150,
+        "entryJs": "restful.js",
+        "httpPort": 54083,
+        "args": "--debug=5859"
+      }
+    ],
+    "animal": [
+      {
+        "id": "animal-server-1",
+        "host": "127.0.0.1",
+        "port": 57301,
+        "args": ""
+      }
+    ]
+  }
 }

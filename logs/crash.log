@@ -1,0 +1,8 @@
+[2018-03-16 13:48:38.162] [INFO] crash-log - [32m[E:\NodeJs-Projects\H5Game.Server\node_modules\pomelo\lib\master\master.js] [39m[http],[http-server-1],[1521179318162],[disconnect]
+[2018-03-16 14:00:33.530] [INFO] crash-log - [32m[E:\NodeJs-Projects\H5Game.Server\node_modules\pomelo\lib\master\master.js] [39m[http],[http-server-1],[1521180033530],[disconnect]
+[2018-03-16 14:19:57.035] [INFO] crash-log - [32m[E:\NodeJs-Projects\H5Game.Server\node_modules\pomelo\lib\master\master.js] [39m[http],[http-server-1],[1521181197035],[disconnect]
+[2018-03-16 14:24:13.959] [INFO] crash-log - [32m[E:\NodeJs-Projects\H5Game.Server\node_modules\pomelo\lib\master\master.js] [39m[http],[http-server-1],[1521181453959],[disconnect]
+[2018-03-16 14:25:08.603] [INFO] crash-log - [32m[E:\NodeJs-Projects\H5Game.Server\node_modules\pomelo\lib\master\master.js] [39m[http],[http-server-1],[1521181508603],[disconnect]
+[2018-03-16 14:41:46.977] [INFO] crash-log - [32m[E:\NodeJs-Projects\H5Game.Server\node_modules\pomelo\lib\master\master.js] [39m[http],[http-server-1],[1521182506977],[disconnect]
+[2018-03-17 06:31:38.336] [INFO] crash-log - [32m[E:\NodeJs-Projects\H5Game.Server\node_modules\pomelo\lib\master\master.js] [39m[master],[master-server-1],[1521239498335],[disconnect]
+[2018-03-19 08:31:38.378] [INFO] crash-log - [32m[E:\NodeJs-Projects\H5Game.Server\node_modules\pomelo\lib\master\master.js] [39m[http],[http-server-1],[1521419498378],[disconnect]
